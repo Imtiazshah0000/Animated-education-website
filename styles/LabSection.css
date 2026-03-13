@@ -1,0 +1,56 @@
+.lab-section {
+  background-color: var(--surface);
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lab-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  height: 350px;
+}
+
+.lab-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.lab-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.lab-card:hover .lab-img {
+  transform: scale(1.1);
+}
+
+.lab-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.lab-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.lab-desc {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
